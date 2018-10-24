@@ -1,2 +1,2 @@
 # Canni
-Primera app de CANNI
+Primera app de CANNI :)
