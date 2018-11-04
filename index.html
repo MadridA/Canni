@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href=".\img\Favicon.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Delius" rel="stylesheet">
-    <title>CanniMx</title>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href=".\img\Favicon.png">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Delius" rel="stylesheet">
+	<title>CanniMx</title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJatHfTtZzwT_YJFFTNqAd5A0qjEKr2gc&callback=initMap"
+	async defer></script>
+	<script src="googlemaps.js"></script>
 </head>
 <body>
-    <h1>CanniMx</h1>
-    <p>Esto es la nueva web NN</p>
+	<img id="logo" src="img\CanniLogo.png" />
+	<div id="form">
+		<div id="formfield">
+		<h1>Ayúdanos a salvar un perrito</h1>
+		<p>Llena el siguiente formulario por favor:</p>
+		<form method="POST" action="./actionpoage.php">
+			<p>Email</p>
+			<input type="email" id="email" ><br />
+			<p>Nombre</p>
+			<input type="text" id="nombre"><br />
+			<p>Apellido</p>
+			<input type="text" id="apellido"><br />
+			<p>Describe al perrito</p>
+			<textarea id="descripcion" maxlength="300" placeholder="Máximo 300 caracteres"></textarea><br />
+			<p style="position: absolute; top: 6%; left: 50%;">Dinos dónde viste al perrito por última vez:</p>
+			<div id="map"></div>
+			<input type="hidden" id="LongLat"><br />
+			<button type="submit" id="ayuda">Pedir ayuda</button>
+		</form>
+		</div>
+	</div>
 </body>
 </html>

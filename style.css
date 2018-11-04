@@ -1,7 +1,99 @@
 /*font-family: 'Annie Use Your Telescope', cursive; Para colocar las fuentes.
 font-family: 'Delius', cursive;*/
-body
+html, body
 {
     background-color: #49C4B6;
     font-family: Arial, Helvetica, sans-serif;
+}
+img#logo
+{
+    width: 10vh;
+    position: relative;
+}
+h1
+{
+    color: #301608;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Delius', cursive;
+}
+p
+{
+    color: #301608;
+    font-size: 20px;
+}
+div#map
+{
+    height: 73%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin: auto;
+    width: 50%;
+}
+div#form
+{
+    background-color: white;
+    position: relative;
+    border: 5px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #EB495D;
+    padding: 1% 2%;
+    margin: auto;
+    width: 80%;
+}
+div#formfield
+{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+input
+{
+    width: 40%;
+    font-size: 20px;
+    padding: 0.8%;
+    color: lightslategrey;
+}
+textarea#descripcion
+{
+    width: 40%;
+    height: 150px;
+    font-size: 19px;
+    padding: 0.8%;
+    color: lightslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button
+{
+    width: 20%;
+    margin: 1% 40%;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Delius', cursive;
+    background: #EB495D;
+    border: 3px;
+    border-color: #F7DF08;
+    border-style: solid;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+button:hover
+{
+    width: 20%;
+    margin: 1% 40%;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Delius', cursive;
+    background: #F7DF08;
+    border: 3px;
+    border-color: #EB495D;
+    border-style: solid;
+    border-radius: 7px;
+    color: #301608;
+    cursor: pointer;
+    position: relative;
 }
